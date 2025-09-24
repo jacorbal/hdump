@@ -2,11 +2,11 @@
 
 ## Goal
 
-Replicate ``hexdump -C'' behaviour.
+Replicate `hexdump -C` (`hd`) behaviour.
 
 Display the input offset in hexadecimal, followed by sixteen
 space-separated, two-column, hexadecimal bytes, followed by the same
-sixteen bytes in `%_p` format enclosed in `|` characters.
+sixteen bytes in `%_p` format enclosed in '`|`' characters.
 
 ## Compilation
 
@@ -14,11 +14,11 @@ sixteen bytes in `%_p` format enclosed in `|` characters.
 
 ## Usage
 
-    $ ./hdump <file>
+    $ hdump <file>
 
 ## Output example
 
-    $  hdump mbfi | head
+    $ hdump my_program | head
     00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|
     00000010  03 00 3e 00 01 00 00 00  00 12 00 00 00 00 00 00  |..>.............|
     00000020  40 00 00 00 00 00 00 00  a8 31 00 00 00 00 00 00  |@........1......|
