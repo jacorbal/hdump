@@ -1,12 +1,13 @@
-# hdump -- Canonical hexadecimal and ASCII dump display
+# `hdump` -- Canonical hexadecimal and ASCII dump display
 
 ## Goal
 
 Replicate `hexdump -C` (`hd`) behaviour.
 
 Display the input offset in hexadecimal, followed by sixteen
-space-separated, two-column, hexadecimal bytes, followed by the same
-sixteen bytes in `%_p` format enclosed in '`|`' characters.
+space-separated, two-column hexadecimal bytes, then the same sixteen
+bytes shown in printable form (or a period for non-printable bytes)
+enclosed in '`|`' characters.
 
 ## Compilation
 
